@@ -12,9 +12,20 @@ public class NaiveDSU {
     }
 
     public int find(int i) {
-        return 0; 
+    while ( pai[i] != i){
+        i= pai[i];
+    }
+        return i; 
     }
 
     public void union(int i, int j) {
+        int paiI = find(i);
+        int paiJ = find(j);
+        if (paiI != paiJ){
+            pai[paiI] = paiJ;
+        }
+
+
+
     }
 }
