@@ -1,9 +1,8 @@
 # Gradle
 .gradle/
 build/
-gradle/
-gradlew
-gradlew.bat
+bin/
+output/
 
 # IDE
 .idea/
@@ -18,7 +17,4 @@ Thumbs.db
 
 # Java
 *.class
-*.jar
-*.war
 *.log
-*.properties
