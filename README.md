@@ -4,7 +4,7 @@ Analisar como as otimizações propostas por Robert Tarjan, como a união por ra
 
 ## Docker Setup
 
-### Como rodar com Docker Compose (recomendado)
+### Como rodar com Docker Compose
 
 ```bash
 docker-compose up --build
@@ -27,13 +27,6 @@ output/
 ```
 
 Os gráficos são gerados automaticamente dentro do container e salvos na raiz do projeto.
-
-### Como rodar com Docker direto
-
-```bash
-docker build -t dsu .
-docker run dsu
-```
 
 ### Requisitos
 
