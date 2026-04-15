@@ -1,0 +1,10 @@
+name: DSU
+
+services:
+  dsu:
+    build: .
+    container_name: dsu
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./output:/app/output
