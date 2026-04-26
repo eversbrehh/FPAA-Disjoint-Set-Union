@@ -11,7 +11,7 @@ public class Kruskal {
         NaiveDSU dsu = new NaiveDSU(n);
         int custoTotalMST = 0; 
         
-        System.out.println("Construindo a MST com Naive DSU");
+        //System.out.println("Construindo a MST com Naive DSU");
 
         for (int i = 0; i < arestas.length; i++) {
             Edge arestaAtual = arestas[i];
@@ -23,10 +23,10 @@ public class Kruskal {
             if (raizOrigem != raizDestino) { 
                 custoTotalMST += arestaAtual.peso; 
                 dsu.union(arestaAtual.origem, arestaAtual.destino); 
-                System.out.println("Aresta adicionada: " + arestaAtual.origem + " -- " + arestaAtual.destino + " (Peso: " + arestaAtual.peso + ")");
+                //System.out.println("Aresta adicionada: " + arestaAtual.origem + " -- " + arestaAtual.destino + " (Peso: " + arestaAtual.peso + ")");
             }
         }
 
-        System.out.println("Custo total da Árvore Geradora Mínima: " + custoTotalMST);
+        //System.out.println("Custo total da Árvore Geradora Mínima: " + custoTotalMST);
     }
 }
